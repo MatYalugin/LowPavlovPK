@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     public float checkSpaceDistance;
     public GameObject playerGO;
     public float checkDelay;
+    public float attackDelay;
+    public float counter;
     bool allowToCheckPlayer = true;
     private void Start()
     {
@@ -53,6 +55,7 @@ public class Enemy : MonoBehaviour
     }
     public void AttackPlayer()
     {
+        counter = 0;
         AudioSource.Play();
         muzzleFlash.Play();
         bulletCartidge.Play();
@@ -94,20 +97,26 @@ public class Enemy : MonoBehaviour
     {
         if(allowToCheckPlayer == true)
         {
-            transform.LookAt(playerGO.transform.position);
-            RaycastHit hit;
-            if (Physics.Raycast(enemyCamera.transform.position, enemyCamera.transform.forward, out hit, checkSpaceDistance))
+            counter += 0.02f;
+            if (counter >= attackDelay)
             {
-                if (hit.transform.tag.Equals("Player"))
+                counter = 0f;
+                transform.LookAt(playerGO.transform.position);
+                RaycastHit hit;
+                if (Physics.Raycast(enemyCamera.transform.position, enemyCamera.transform.forward, out hit, checkSpaceDistance))
                 {
-                    allowToCheckPlayer = false;
-                    AttackPlayer();
-                    run = false;
-                    Invoke("allowToCheck", checkDelay);
-                }
-                else
-                {
-                    run = true;
+                    if (hit.transform.tag.Equals("Player"))
+                    {
+                        allowToCheckPlayer = false;
+                        counter += 0.02f;
+                        AttackPlayer();
+                        run = false;
+                        Invoke("allowToCheck", checkDelay);
+                    }
+                    else
+                    {
+                        run = true;
+                    }
                 }
             }
         }

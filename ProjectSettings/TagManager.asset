@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Map
+  - Head
+  - Helmet
+  - Vest
+  - Limb
   layers:
   - Default
   - TransparentFX

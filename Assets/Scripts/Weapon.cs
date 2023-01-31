@@ -58,6 +58,22 @@ public class Weapon : MonoBehaviour
                         hit.transform.GetComponent<Enemy>().Hurt(damage);
                     }
                 }
+                if (hit.transform.tag.Equals("Head"))
+                {
+                    hit.transform.GetComponent<EnemyHead>().headHurt(damage);
+                }
+                if (hit.transform.tag.Equals("Helmet"))
+                {
+                    hit.transform.GetComponent<EnemyHelmet>().helmetDamaged(damage);
+                }
+                if (hit.transform.tag.Equals("Vest"))
+                {
+                    hit.transform.GetComponent<EnemyVest>().vestDamaged(damage);
+                }
+                if (hit.transform.tag.Equals("Limb"))
+                {
+                    hit.transform.GetComponent<EnemyArmLeg>().limbHurt(damage);
+                }
             }
         }
         if (isAutomatic == false)
@@ -84,6 +100,22 @@ public class Weapon : MonoBehaviour
                     if (hit.transform.tag.Equals("Enemy"))
                     {
                         hit.transform.GetComponent<Enemy>().Hurt(damage);
+                    }
+                    if (hit.transform.tag.Equals("Head"))
+                    {
+                        hit.transform.GetComponent<EnemyHead>().headHurt(damage);
+                    }
+                    if (hit.transform.tag.Equals("Helmet"))
+                    {
+                        hit.transform.GetComponent<EnemyHelmet>().helmetDamaged(damage);
+                    }
+                    if (hit.transform.tag.Equals("Vest"))
+                    {
+                        hit.transform.GetComponent<EnemyVest>().vestDamaged(damage);
+                    }
+                    if (hit.transform.tag.Equals("Limb"))
+                    {
+                        hit.transform.GetComponent<EnemyArmLeg>().limbHurt(damage);
                     }
                 }
             }

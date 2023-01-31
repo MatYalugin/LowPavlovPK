@@ -451,7 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7570224440076201621, guid: 779d98e45f2ba2247a906b3d6727cfe4, type: 3}
       propertyPath: attackDelay
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7570224440076201621, guid: 779d98e45f2ba2247a906b3d6727cfe4, type: 3}
       propertyPath: killScoreGO
@@ -635,7 +635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7570224440076201621, guid: 779d98e45f2ba2247a906b3d6727cfe4, type: 3}
       propertyPath: attackDelay
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7570224440076201621, guid: 779d98e45f2ba2247a906b3d6727cfe4, type: 3}
       propertyPath: killScoreGO
@@ -1923,7 +1923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7570224440076201621, guid: 779d98e45f2ba2247a906b3d6727cfe4, type: 3}
       propertyPath: attackDelay
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7570224440076201621, guid: 779d98e45f2ba2247a906b3d6727cfe4, type: 3}
       propertyPath: killScoreGO

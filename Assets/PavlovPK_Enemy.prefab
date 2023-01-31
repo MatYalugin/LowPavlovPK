@@ -11988,7 +11988,7 @@ MonoBehaviour:
   checkSpaceDistance: 20
   playerGO: {fileID: 0}
   checkDelay: 1
-  attackDelay: 3
+  attackDelay: 4
   counter: 0
 --- !u!195 &7570224440076201619
 NavMeshAgent:

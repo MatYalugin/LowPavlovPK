@@ -20,4 +20,8 @@ public class EnemyArmLeg : MonoBehaviour
     {
         enemyGO.GetComponent<Enemy>().Hurt(damage / 2);
     }
+    public void limbknifeHurt(float damage)
+    {
+        enemyGO.GetComponent<Enemy>().Hurt(damage);
+    }
 }

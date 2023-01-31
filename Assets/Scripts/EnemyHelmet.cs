@@ -25,4 +25,8 @@ public class EnemyHelmet : MonoBehaviour
         health = health - damage;
         enemyGO.GetComponent<Enemy>().Hurt(damage / 2);
     }
+    public void helmetknifeDamaged(float damage)
+    {
+        enemyGO.GetComponent<Enemy>().Hurt(damage);
+    }
 }

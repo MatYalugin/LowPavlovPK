@@ -20,4 +20,8 @@ public class EnemyHead : MonoBehaviour
     {
         enemyGO.GetComponent<Enemy>().Hurt(damage * 3);
     }
+    public void knifeHeadHurt(float damage)
+    {
+        enemyGO.GetComponent<Enemy>().Hurt(damage);
+    }
 }

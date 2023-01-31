@@ -32,6 +32,21 @@ public class Melee : MonoBehaviour
                     hit.transform.GetComponent<Enemy>().Hurt(damage);
                     Destroy(gameObject);
                 }
+                if (hit.transform.tag.Equals("Vest"))
+                {
+                    hit.transform.GetComponent<EnemyVest>().vestKnifeDamaged(damage);
+                    Destroy(gameObject);
+                }
+                if (hit.transform.tag.Equals("Helmet"))
+                {
+                    hit.transform.GetComponent<EnemyHelmet>().helmetknifeDamaged(damage);
+                    Destroy(gameObject);
+                }
+                if (hit.transform.tag.Equals("Limb"))
+                {
+                    hit.transform.GetComponent<EnemyArmLeg>().limbknifeHurt(damage);
+                    Destroy(gameObject);
+                }
             }
         }
     }

@@ -921,9 +921,10 @@ MonoBehaviour:
   ammo: 30
   maxAmmo: 30
   AmmoText: {fileID: 0}
-  firingDelay: 0.15
+  firingDelay: 0.16
   isReadyToFire: 1
   isAutomatic: 1
+  fireModeChangeable: 1
 --- !u!1 &2058032589
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,9 +985,10 @@ MonoBehaviour:
   ammo: 7
   maxAmmo: 7
   AmmoText: {fileID: 0}
-  firingDelay: 0.3
+  firingDelay: 0.18
   isReadyToFire: 1
   isAutomatic: 0
+  fireModeChangeable: 0
 --- !u!1 &443830069955952008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,9 +1304,10 @@ MonoBehaviour:
   ammo: 30
   maxAmmo: 30
   AmmoText: {fileID: 0}
-  firingDelay: 0.15
+  firingDelay: 0.16
   isReadyToFire: 1
   isAutomatic: 1
+  fireModeChangeable: 1
 --- !u!1 &1696878803720794261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,9 +1368,10 @@ MonoBehaviour:
   ammo: 18
   maxAmmo: 18
   AmmoText: {fileID: 0}
-  firingDelay: 0.3
+  firingDelay: 0.18
   isReadyToFire: 1
   isAutomatic: 0
+  fireModeChangeable: 1
 --- !u!1 &2002327763366024379
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,9 +2225,10 @@ MonoBehaviour:
   ammo: 7
   maxAmmo: 7
   AmmoText: {fileID: 0}
-  firingDelay: 0.4
+  firingDelay: 0.3
   isReadyToFire: 1
   isAutomatic: 0
+  fireModeChangeable: 0
 --- !u!1 &5139751926321057441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3840,9 +3845,10 @@ MonoBehaviour:
   ammo: 30
   maxAmmo: 30
   AmmoText: {fileID: 0}
-  firingDelay: 0.15
+  firingDelay: 0.17
   isReadyToFire: 1
   isAutomatic: 1
+  fireModeChangeable: 1
 --- !u!1001 &126061327588016115
 PrefabInstance:
   m_ObjectHideFlags: 0

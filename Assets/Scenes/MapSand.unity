@@ -572,16 +572,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8079864971919752977, guid: 70c3b1ca504abb3479b85ca36cc62e70, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c3b1ca504abb3479b85ca36cc62e70, type: 3}
 --- !u!1 &1210127429 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5246663035373504105, guid: 70c3b1ca504abb3479b85ca36cc62e70, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6510210209946216283, guid: 70c3b1ca504abb3479b85ca36cc62e70, type: 3}
   m_PrefabInstance: {fileID: 1210127428}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1210127430 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3060648754673801291, guid: 70c3b1ca504abb3479b85ca36cc62e70, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8079864971919752977, guid: 70c3b1ca504abb3479b85ca36cc62e70, type: 3}
   m_PrefabInstance: {fileID: 1210127428}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1234404344 stripped
@@ -1340,6 +1344,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ad51dc0e919fb4d9a4f058dbfc0047, type: 3}
+--- !u!114 &6912545334524984266 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4615217016387953688, guid: 07ad51dc0e919fb4d9a4f058dbfc0047, type: 3}
+  m_PrefabInstance: {fileID: 6912545334524984265}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7359720061804196109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1487,6 +1502,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1473128707, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: fireModeText
+      value: 
+      objectReference: {fileID: 6912545334524984266}
     - target: {fileID: 2058032589, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -1503,6 +1522,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2058032591, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: fireModeText
+      value: 
+      objectReference: {fileID: 6912545334524984266}
     - target: {fileID: 888357080030965492, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1511,6 +1534,10 @@ PrefabInstance:
       propertyPath: AmmoText
       value: 
       objectReference: {fileID: 88684729}
+    - target: {fileID: 1341146108073316215, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: fireModeText
+      value: 
+      objectReference: {fileID: 6912545334524984266}
     - target: {fileID: 1507457573060976823, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -1531,6 +1558,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2921096500683645462, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: fireModeText
+      value: 
+      objectReference: {fileID: 6912545334524984266}
     - target: {fileID: 3339451360382109192, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: m_CollisionDetection
       value: 3
@@ -1655,10 +1686,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3423525305063194262, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: fireModeText
+      value: 
+      objectReference: {fileID: 6912545334524984266}
     - target: {fileID: 4065818867252647858, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: AmmoText
       value: 
       objectReference: {fileID: 88684729}
+    - target: {fileID: 4065818867252647858, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: fireModeText
+      value: 
+      objectReference: {fileID: 6912545334524984266}
     - target: {fileID: 4850011701232665489, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -1787,6 +1826,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7914896084361120269, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: fireModeText
+      value: 
+      objectReference: {fileID: 6912545334524984266}
     - target: {fileID: 8402921420829809073, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2950001

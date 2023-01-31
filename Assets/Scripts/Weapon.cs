@@ -21,13 +21,14 @@ public class Weapon : MonoBehaviour
     public float ammo;
     public float maxAmmo;
     public Text AmmoText;
+    public Text fireModeText;
     public float firingDelay;
     public bool isReadyToFire = true;
     public bool isAutomatic;
+    public bool fireModeChangeable;
     private void Start()
     {
         mainCamera = Camera.main;
-        AmmoText.text = "Ammo: " + ammo;
     }
 
     public void Shot()
@@ -81,7 +82,7 @@ public class Weapon : MonoBehaviour
             if (Input.GetButtonDown("Fire1") && ammo != 0 && isReadyToFire == true)
             {
                 isReadyToFire = false;
-                Invoke("MakeReadyToFire", firingDelay);
+                Invoke("MakeReadyToFire", firingDelay * 1.5f);
                 ammo = ammo - 1f;
                 AmmoText.text = "Ammo: " + ammo;
                 if (useParticleSystem == true)
@@ -121,6 +122,22 @@ public class Weapon : MonoBehaviour
             }
         }
     }
+    public void fireModeChange()
+    {
+        if (fireModeChangeable == true)
+        {
+            if (Input.GetKeyDown(KeyCode.V) && isAutomatic == false)
+            {
+                isAutomatic = true;
+                fireModeText.text = "Fire mode - auto";
+            }
+            else if (Input.GetKeyDown(KeyCode.V) && isAutomatic == true)
+            {
+                isAutomatic = false;
+                fireModeText.text = "Fire mode - semi";
+            }
+        }
+    }
     public void MakeReadyToFire()
     {
         isReadyToFire = true;
@@ -149,6 +166,16 @@ public class Weapon : MonoBehaviour
         Shot();
         Reload();
         Inspection();
+        fireModeChange();
+        if (isAutomatic == true)
+        {
+            fireModeText.text = "Fire mode - auto";
+        }
+        else if (isAutomatic == false)
+        {
+            fireModeText.text = "Fire mode - semi";
+        }
+        AmmoText.text = "Ammo: " + ammo;
     }
 }
 

@@ -13,6 +13,7 @@ public class Melee : MonoBehaviour
     public float damage;
     public float distance;
     public Text ammoText;
+    public Text fireModeText;
     private void Start()
     {
         mainCamera = Camera.main;
@@ -46,5 +47,6 @@ public class Melee : MonoBehaviour
         Kick();
         Inspection();
         ammoText.text = "";
+        fireModeText.text = "";
     }
 }

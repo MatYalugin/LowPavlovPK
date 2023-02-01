@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHelmet : MonoBehaviour
 {
-    public float health = 100;
+    public float health = 50;
     public GameObject enemyGO;
     // Start is called before the first frame update
     void Start()

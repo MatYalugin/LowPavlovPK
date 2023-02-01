@@ -9,7 +9,10 @@ public class Player : MonoBehaviour
     public Animator playerAnimator;
     public float Health = 100;
     public float MaxHealth = 100;
+    public float armor = 100;
+    public float maxArmor = 100;
     public Text HealthText;
+    public Text armorText;
     public GameObject DeathMenu;
     public GameObject controlsTip;
     // Update is called once per frame
@@ -28,7 +31,19 @@ public class Player : MonoBehaviour
     }
     public void Hurt(float damage)
     {
-        Health = Health - damage;
+        if(armor != 0)
+        {
+            armor = armor - damage;
+            Health = Health - damage / 2;
+            armorText.text = "Armor: " + armor;
+            HealthText.text = "Health: " + Health;
+
+        }
+        if(armor <= 0)
+        {
+            Health = Health - damage;
+            HealthText.text = "Health: " + Health;
+        }
         HealthText.text = "Health: " + Health;
         if (Health <= 0)
         {

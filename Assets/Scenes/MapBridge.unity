@@ -1164,6 +1164,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &936748210 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4052063884050227041, guid: 07ad51dc0e919fb4d9a4f058dbfc0047, type: 3}
+  m_PrefabInstance: {fileID: 936748204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1028685080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1721,6 +1732,10 @@ PrefabInstance:
       propertyPath: DeathMenu
       value: 
       objectReference: {fileID: 480604528}
+    - target: {fileID: 1127788989, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
+      propertyPath: armorText
+      value: 
+      objectReference: {fileID: 936748210}
     - target: {fileID: 1127788989, guid: 8a1e7b65b38efaa48b35bdc9562b8a8e, type: 3}
       propertyPath: HealthText
       value: 

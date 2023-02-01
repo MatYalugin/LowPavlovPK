@@ -11975,7 +11975,7 @@ MonoBehaviour:
   Health: 100
   vision: 100
   attackRadius: 20
-  attackDamage: 10
+  attackDamage: 20
   animator: {fileID: 7570224440076201620}
   AudioSource: {fileID: 7570224439095281582}
   muzzleFlash: {fileID: 2493160294368287486}
